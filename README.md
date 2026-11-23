@@ -61,3 +61,21 @@ I created 10 visualizations using SPL queries:
 
 This project gave me hands-on experience using Splunk to investigate transaction data and build visualizations that make fraud patterns easier to identify. It strengthened my understanding of how to use search queries and dashboards to analyze large datasets, skills that are also valuable in security monitoring and SOC environments.
 
+
+## Splunk Fraud Detection Dashboard Screenshots
+
+### Dashboard 1
+![Dashboard 1](screenshots/splunk%20fraud%20detection%20dashboard%201.png)
+
+### Dashboard 2
+![Dashboard 2](screenshots/splunk%20fraud%20detection%20dashboard%202.png)
+
+### Dashboard 3
+![Dashboard 3](screenshots/splunk%20fraud%20detection%20dashboard%203.png)
+
+### Dashboard 4
+![Dashboard 4](screenshots/splunk%20fraud%20detection%20dashboard%204.png)
+
+### Dashboard 5
+![Dashboard 5](screenshots/splunk%20fraud%20detection%20dashboard%205.png)
+
