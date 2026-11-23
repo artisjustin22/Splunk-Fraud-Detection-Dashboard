@@ -1,0 +1,87 @@
+
+# Splunk Fraud Detection Queries
+
+## 1. Transaction Count by Category
+
+```spl
+index=main sourcetype="fraud_detection.csv"
+| stats count by category
+| sort - count
+```
+
+## 2. Fraudulent vs. Legitimate Transactions
+
+```spl
+index=main sourcetype="fraud_detection.csv"
+| stats count by fraud
+```
+
+## 3. Transaction Count by Age
+
+```spl
+index=main sourcetype="fraud_detection.csv"
+| stats count by age
+| sort age
+```
+
+## 4. Transaction Count by Merchant
+
+```spl
+index=main sourcetype="fraud_detection.csv"
+| stats count by merchant
+| sort - count
+```
+
+## 5. Fraudulent Transactions by Age
+
+```spl
+index=main sourcetype="fraud_detection.csv"
+| search fraud=1
+| stats count by age
+| sort - count
+```
+
+## 6. Fraudulent Transactions by Category
+
+```spl
+index=main sourcetype="fraud_detection.csv"
+| search fraud=1
+| stats count by category
+| sort - count
+```
+
+## 7. Fraudulent Transactions by Month (Step)
+
+```spl
+index=main sourcetype="fraud_detection.csv"
+| search fraud=1
+| stats count by step
+| sort 0 step
+```
+
+## 8. Fraudulent Transactions by Gender
+
+```spl
+index=main sourcetype="fraud_detection.csv"
+| search fraud=1
+| stats count by gender
+| sort - count
+```
+
+## 9. Fraudulent Transactions by Gender and Category
+
+```spl
+index=main sourcetype="fraud_detection.csv"
+| search fraud=1
+| stats count by gender category
+| sort - count
+```
+
+## 10. Fraudulent Transactions by Age and Merchant
+
+```spl
+index=main sourcetype="fraud_detection.csv"
+| search fraud=1
+| stats count by age merchant
+| sort - count
+```
